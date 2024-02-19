@@ -25,18 +25,20 @@ node -v
 ### 2.2 
 ```
 sh -ci "$(curl -fsSL https://smartcontracts.org/install.sh)"
-(or) curl -o install_dfx.sh -fsSL https://internetcomputer.org/install.sh 
+curl -o install_dfx.sh -fsSL https://internetcomputer.org/install.sh 
 chmod +x install_dfx.sh
 ./install_dfx.sh
 ```
 
 ### 3. Create project
 ```
-	-- dfx new demo
-	-- motoko, react, default
-	-- cd demo
-	-- dfx start --clean --background
-	-- dfx deploy demo
+dfx new demo
+```
+- Choose: motoko, react, default
+```
+cd demo
+dfx start --clean --background
+dfx deploy demo
 ```
 
 ### 4. Open in VS code
